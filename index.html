@@ -16,20 +16,47 @@
 
 body{
 font-family:'Poppins',sans-serif;
-background:linear-gradient(135deg,#f8fafc,#e0e7ff);
-color:#1f2937;
+background:linear-gradient(135deg,#fdf2f8,#eef2ff);
+color:#374151;
+scroll-behavior:smooth;
 }
+
+/* CARD */
 
 .card{
 background:white;
-border-radius:20px;
+border-radius:25px;
 padding:30px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
-transition:0.3s;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+transition:0.4s;
 }
 
 .card:hover{
-transform:translateY(-6px);
+transform:translateY(-8px);
+}
+
+/* IMAGE STYLE */
+
+.gallery img{
+border-radius:20px;
+transition:0.5s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* SCROLL ANIMATION */
+
+.reveal{
+opacity:0;
+transform:translateY(50px);
+transition:all 1s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
 }
 
 </style>
@@ -42,42 +69,46 @@ transform:translateY(-6px);
 
 <!-- HERO -->
 
-<section class="min-h-screen flex items-center justify-center text-center">
+<section class="min-h-screen flex items-center justify-center text-center px-6">
 
-<div>
+<div class="reveal">
 
-<h1 class="text-5xl font-semibold mb-4 text-purple-600">
+<h1 class="text-6xl font-semibold text-pink-500 mb-6">
 Vu Thi Nhu Quynh
 </h1>
 
-<p class="text-lg text-gray-600">
+<p class="text-xl text-gray-600">
 Accounting & Auditing Student
 </p>
 
-<p class="mt-6 text-gray-500 italic">
-Learning slowly, growing quietly.
+<p class="mt-6 italic text-gray-500 max-w-xl mx-auto">
+A student who enjoys learning, creating meaningful experiences and capturing small beautiful moments in life.
 </p>
 
 </div>
 
 </section>
+
 
 
 <!-- ABOUT -->
 
-<section class="py-20 px-6">
+<section class="py-24 px-6">
 
-<h2 class="text-3xl text-center mb-12 font-semibold">
+<div class="max-w-4xl mx-auto card reveal text-center">
+
+<h2 class="text-3xl font-semibold mb-6">
 About Me
 </h2>
 
-<div class="max-w-3xl mx-auto card text-center">
-
 <p class="text-gray-600 leading-relaxed">
 
-I am a first-year student majoring in Accounting and Auditing.
-I enjoy learning new knowledge, participating in student activities,
-and exploring creativity through small personal projects.
+I am currently a sophomore student majoring in Accounting and Auditing.
+Studying at university allows me to develop both analytical thinking
+and teamwork skills through academic projects and student activities.
+
+Besides studying, I enjoy exploring creative ideas, participating in
+community activities and documenting memorable moments of student life.
 
 </p>
 
@@ -86,55 +117,46 @@ and exploring creativity through small personal projects.
 </section>
 
 
-<!-- MOMENTS -->
 
-<section class="py-20 px-6">
+<!-- EDUCATION -->
 
-<h2 class="text-3xl text-center mb-12 font-semibold">
-Moments
+<section class="py-24 px-6">
+
+<h2 class="text-3xl text-center font-semibold mb-16 reveal">
+Education
 </h2>
 
-<div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+<div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
 
-<div class="card text-center">
+<div class="card reveal">
 
-<img src="tulip.jpg" class="rounded-xl mb-3">
+<h3 class="text-xl font-semibold mb-2">
+Foreign Trade University
+</h3>
 
-<p class="text-sm text-gray-500 italic">
-Little flowers, little peace 🌷
+<p class="text-gray-500 mb-4">
+2024 – Present
+</p>
+
+<p>
+Accounting & Auditing – Standard Program
 </p>
 
 </div>
 
 
-<div class="card text-center">
+<div class="card reveal">
 
-<img src="military.jpg" class="rounded-xl mb-3">
+<h3 class="text-xl font-semibold mb-2">
+Kim Thanh High School
+</h3>
 
-<p class="text-sm text-gray-500 italic">
-A disciplined chapter of student life 🎖
+<p class="text-gray-500 mb-4">
+Alumni
 </p>
 
-</div>
-
-
-<div class="card text-center">
-
-<img src="hanoi.jpg" class="rounded-xl mb-3">
-
-<p class="text-sm text-gray-500 italic">
-Autumn in Hanoi always feels poetic 🍂
-</p>
-
-</div>
-
-
-<div class="card text-center">
-
-<img src="rose.jpg" class="rounded-xl mb-3">
-
-<p class="text-sm text-gray-500 italic">
-Soft moments in a busy world 🌹
+<p>
+The place where my interest in mathematics and logical thinking began.
 </p>
 
 </div>
@@ -144,37 +166,48 @@ Soft moments in a busy world 🌹
 </section>
 
 
-<!-- PROJECTS -->
 
-<section class="py-20 px-6">
+<!-- EXPERIENCE -->
 
-<h2 class="text-3xl text-center mb-12 font-semibold">
-Projects
+<section class="py-24 px-6">
+
+<h2 class="text-3xl text-center font-semibold mb-16 reveal">
+Experience
 </h2>
 
-<div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+<div class="space-y-10 max-w-4xl mx-auto">
 
-<div class="card">
+<div class="card reveal">
 
-<h3 class="text-xl font-semibold mb-2">
-Student Activities
+<h3 class="text-xl font-semibold">
+Vice Head of HR – CFAA
 </h3>
 
-<p class="text-gray-600">
-Participated in organizing student events and activities within the faculty.
+<p class="text-gray-500 mb-3">
+Future Accountants & Auditors Club
+</p>
+
+<p>
+Supporting internal human resource activities, coordinating team members
+and helping maintain an organized and collaborative environment.
 </p>
 
 </div>
 
 
-<div class="card">
+<div class="card reveal">
 
-<h3 class="text-xl font-semibold mb-2">
-Academic Projects
+<h3 class="text-xl font-semibold">
+Mathematics Tutor
 </h3>
 
-<p class="text-gray-600">
-Completed coursework related to accounting, data analysis and SQL practice.
+<p class="text-gray-500 mb-3">
+Freelance
+</p>
+
+<p>
+Helping students understand mathematical concepts and develop logical
+thinking through simplified explanations and practice exercises.
 </p>
 
 </div>
@@ -182,25 +215,54 @@ Completed coursework related to accounting, data analysis and SQL practice.
 </div>
 
 </section>
+
+
+
+<!-- MOMENTS / GALLERY -->
+
+<section class="py-24 px-6">
+
+<h2 class="text-3xl text-center font-semibold mb-16 reveal">
+Daily Moments
+</h2>
+
+<div class="gallery columns-2 md:columns-4 gap-6 max-w-6xl mx-auto">
+
+<img src="tulip.jpg" class="mb-6 reveal">
+<img src="quansu.jpg" class="mb-6 reveal">
+<img src="hanoi.jpg" class="mb-6 reveal">
+<img src="rose.jpg" class="mb-6 reveal">
+<img src="campus.jpg" class="mb-6 reveal">
+<img src="friends.jpg" class="mb-6 reveal">
+
+</div>
+
+</section>
+
 
 
 <!-- CONTACT -->
 
-<section class="py-20 text-center">
+<section class="py-24 text-center">
 
-<h2 class="text-3xl mb-6 font-semibold">
-Contact
+<div class="reveal">
+
+<h2 class="text-3xl font-semibold mb-6">
+Let's Connect
 </h2>
 
-<p class="text-gray-600">
-Email: yourmail@gmail.com
+<p class="text-gray-600 mb-4">
+Email: nhuquynhh3110@gmail.com
 </p>
 
 <p class="text-gray-600">
 GitHub: github.com/nhuquynh3110
 </p>
 
+</div>
+
 </section>
+
 
 
 <footer class="text-center py-10 text-gray-400">
@@ -210,6 +272,32 @@ GitHub: github.com/nhuquynh3110
 </p>
 
 </footer>
+
+
+
+<script>
+
+function reveal(){
+
+var reveals=document.querySelectorAll(".reveal");
+
+for(var i=0;i<reveals.length;i++){
+
+var windowHeight=window.innerHeight;
+var elementTop=reveals[i].getBoundingClientRect().top;
+var elementVisible=100;
+
+if(elementTop<windowHeight-elementVisible){
+reveals[i].classList.add("active");
+}
+
+}
+
+}
+
+window.addEventListener("scroll",reveal);
+
+</script>
 
 
 </body>
