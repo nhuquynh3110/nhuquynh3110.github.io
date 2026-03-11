@@ -10,78 +10,26 @@
 
 <script src="https://cdn.tailwindcss.com"></script>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
 body{
-font-family:'Quicksand',sans-serif;
-background:#f6efe8;
-color:#4b3f38;
-scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#f8fafc,#e0e7ff);
+color:#1f2937;
 }
 
-/* headings */
-
-.serif{
-font-family:'Playfair Display',serif;
-}
-
-/* vintage color */
-
-.accent{
-color:#b76e79;
-}
-
-.bg-accent{
-background:#b76e79;
-}
-
-/* vintage card */
-
-.vintage-card{
-background:#fffdf9;
-border-radius:25px;
-padding:40px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-border:1px solid #f0e6de;
-transition:0.4s;
-}
-
-.vintage-card:hover{
-transform:translateY(-6px);
-box-shadow:0 20px 40px rgba(0,0,0,0.12);
-}
-
-/* polaroid style */
-
-.polaroid{
+.card{
 background:white;
-padding:12px;
-border-radius:10px;
-box-shadow:0 10px 20px rgba(0,0,0,0.1);
-transition:0.4s;
-}
-
-.polaroid:hover{
-transform:rotate(2deg) scale(1.03);
-}
-
-/* skill bar */
-
-.skill-bar{
-background:#eee;
 border-radius:20px;
-height:8px;
-margin-top:6px;
+padding:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+transition:0.3s;
 }
 
-.skill-fill{
-height:100%;
-background:#b76e79;
-border-radius:20px;
+.card:hover{
+transform:translateY(-6px);
 }
 
 </style>
@@ -91,326 +39,101 @@ border-radius:20px;
 
 <body>
 
-<!-- NAV -->
 
-<nav class="fixed w-full bg-[#f6efe8]/90 backdrop-blur-md border-b border-[#e6d9cf] z-50">
+<!-- HERO -->
 
-<div class="max-w-6xl mx-auto flex justify-between items-center py-5 px-6">
-
-<h1 class="serif text-2xl font-bold accent">Quynh's Journal</h1>
-
-<div class="space-x-8 text-sm font-semibold text-[#6b5c55]">
-
-<a href="#intro">Intro</a>
-<a href="#edu">Education</a>
-<a href="#skills">Skills</a>
-<a href="#exp">Experience</a>
-<a href="#moments">Moments</a>
-
-</div>
-
-</div>
-
-</nav>
-
-
-<!-- INTRO -->
-
-<section id="intro" class="min-h-screen flex items-center pt-24 px-6">
-
-<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+<section class="min-h-screen flex items-center justify-center text-center">
 
 <div>
 
-<h1 class="serif text-6xl font-black mb-6 leading-tight">
-
-Vu Thi  
-<span class="accent">Nhu Quynh</span>
-
+<h1 class="text-5xl font-semibold mb-4 text-purple-600">
+Vu Thi Nhu Quynh
 </h1>
 
-<div class="vintage-card">
-
-<h3 class="serif text-2xl mb-4 accent">
-A little introduction
-</h3>
-
-<p class="text-lg leading-relaxed mb-4">
-
-I am a sophomore student from <b>Hai Duong</b>, currently studying at <b>Foreign Trade University</b>.
-
+<p class="text-lg text-gray-600">
+Accounting & Auditing Student
 </p>
 
-<p class="leading-relaxed">
-
-Growing up with a strong love for logic and mathematics, I enjoy exploring ideas, working with people and building meaningful experiences along the journey of learning.
-
+<p class="mt-6 text-gray-500 italic">
+Learning slowly, growing quietly.
 </p>
-
-</div>
-
-</div>
-
-
-<div class="flex justify-center">
-
-<img src="avtfb.jpg"
-class="w-96 h-96 object-cover rounded-[40px] shadow-xl">
-
-</div>
 
 </div>
 
 </section>
 
 
+<!-- ABOUT -->
 
-<!-- EDUCATION -->
+<section class="py-20 px-6">
 
-<section id="edu" class="py-24 px-6">
-
-<div class="max-w-6xl mx-auto">
-
-<h2 class="serif text-4xl text-center mb-16 font-bold accent">
-Education
+<h2 class="text-3xl text-center mb-12 font-semibold">
+About Me
 </h2>
 
-<div class="grid md:grid-cols-2 gap-10">
+<div class="max-w-3xl mx-auto card text-center">
 
+<p class="text-gray-600 leading-relaxed">
 
-<div class="vintage-card">
+I am a first-year student majoring in Accounting and Auditing.
+I enjoy learning new knowledge, participating in student activities,
+and exploring creativity through small personal projects.
 
-<img src="đhngoai thuong cfaa.jpg"
-class="rounded-xl mb-6 h-40 w-full object-cover">
-
-<h4 class="text-2xl font-bold mb-2">
-Foreign Trade University
-</h4>
-
-<p class="accent text-sm mb-4">
-2024 – Present
 </p>
-
-<p>
-Sophomore | Accounting & Auditing Program
-</p>
-
-</div>
-
-
-<div class="vintage-card">
-
-<img src="cấp 3.jpg"
-class="rounded-xl mb-6 h-40 w-full object-cover">
-
-<h4 class="text-2xl font-bold mb-2">
-Kim Thanh High School
-</h4>
-
-<p class="accent text-sm mb-4">
-Alumni
-</p>
-
-<p>
-Where my journey with mathematics and curiosity began.
-</p>
-
-</div>
-
-</div>
 
 </div>
 
 </section>
-
-
-
-<!-- SKILLS -->
-
-<section id="skills" class="py-24 px-6">
-
-<div class="max-w-4xl mx-auto">
-
-<h2 class="serif text-4xl text-center mb-16 font-bold accent">
-Skills
-</h2>
-
-<div class="vintage-card space-y-8">
-
-<div>
-
-<p class="font-semibold">
-Teamwork & Collaboration
-</p>
-
-<div class="skill-bar">
-<div class="skill-fill" style="width:95%"></div>
-</div>
-
-</div>
-
-<div>
-
-<p class="font-semibold">
-Leadership
-</p>
-
-<div class="skill-bar">
-<div class="skill-fill" style="width:88%"></div>
-</div>
-
-</div>
-
-<div>
-
-<p class="font-semibold">
-Critical Thinking
-</p>
-
-<div class="skill-bar">
-<div class="skill-fill" style="width:90%"></div>
-</div>
-
-</div>
-
-<div>
-
-<p class="font-semibold">
-Microsoft Office
-</p>
-
-<div class="skill-bar">
-<div class="skill-fill" style="width:85%"></div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- EXPERIENCE -->
-
-<section id="exp" class="py-24 px-6">
-
-<div class="max-w-5xl mx-auto">
-
-<h2 class="serif text-4xl text-center mb-16 font-bold accent">
-Experience
-</h2>
-
-<div class="space-y-10">
-
-
-<div class="vintage-card flex gap-6 items-center">
-
-<img src="chung kết tac.jpg"
-class="w-32 h-32 object-cover rounded-xl">
-
-<div>
-
-<h4 class="text-xl font-bold">
-Vice Head of HR
-</h4>
-
-<p class="accent text-sm mb-2">
-Future Accountants & Auditors Club
-</p>
-
-<p>
-Supporting the development of internal culture and coordinating human resource activities within the club.
-</p>
-
-</div>
-
-</div>
-
-
-
-<div class="vintage-card flex gap-6 items-center">
-
-<img src="cafeeongbak.jpg"
-class="w-32 h-32 object-cover rounded-xl">
-
-<div>
-
-<h4 class="text-xl font-bold">
-Mathematics Tutor
-</h4>
-
-<p class="accent text-sm mb-2">
-Freelance
-</p>
-
-<p>
-Helping students build strong logical thinking and simplify complex mathematical concepts.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
 
 
 <!-- MOMENTS -->
 
-<section id="moments" class="py-24 px-6">
+<section class="py-20 px-6">
 
-<h2 class="serif text-4xl text-center mb-16 font-bold accent">
-Daily Moments
+<h2 class="text-3xl text-center mb-12 font-semibold">
+Moments
 </h2>
 
-<div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
 
+<div class="card text-center">
 
-<div class="polaroid">
+<img src="tulip.jpg" class="rounded-xl mb-3">
 
-<img src="tulip.jpg" class="rounded-lg mb-3">
-
-<p class="italic text-sm">
+<p class="text-sm text-gray-500 italic">
 Little flowers, little peace 🌷
 </p>
 
 </div>
 
 
-<div class="polaroid">
+<div class="card text-center">
 
-<img src="quân sự 2.jpg" class="rounded-lg mb-3">
+<img src="military.jpg" class="rounded-xl mb-3">
 
-<p class="italic text-sm">
+<p class="text-sm text-gray-500 italic">
 A disciplined chapter of student life 🎖
 </p>
 
 </div>
 
 
-<div class="polaroid">
+<div class="card text-center">
 
-<img src="thuhanoi.jpg" class="rounded-lg mb-3">
+<img src="hanoi.jpg" class="rounded-xl mb-3">
 
-<p class="italic text-sm">
-Autumn in Hanoi feels poetic 🍂
+<p class="text-sm text-gray-500 italic">
+Autumn in Hanoi always feels poetic 🍂
 </p>
 
 </div>
 
 
-<div class="polaroid">
+<div class="card text-center">
 
-<img src="hoahong.jpg" class="rounded-lg mb-3">
+<img src="rose.jpg" class="rounded-xl mb-3">
 
-<p class="italic text-sm">
+<p class="text-sm text-gray-500 italic">
 Soft moments in a busy world 🌹
 </p>
 
@@ -421,30 +144,70 @@ Soft moments in a busy world 🌹
 </section>
 
 
+<!-- PROJECTS -->
+
+<section class="py-20 px-6">
+
+<h2 class="text-3xl text-center mb-12 font-semibold">
+Projects
+</h2>
+
+<div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+<div class="card">
+
+<h3 class="text-xl font-semibold mb-2">
+Student Activities
+</h3>
+
+<p class="text-gray-600">
+Participated in organizing student events and activities within the faculty.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3 class="text-xl font-semibold mb-2">
+Academic Projects
+</h3>
+
+<p class="text-gray-600">
+Completed coursework related to accounting, data analysis and SQL practice.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
 
 <!-- CONTACT -->
 
-<footer class="py-24 text-center">
+<section class="py-20 text-center">
 
-<h2 class="serif text-4xl mb-6">
-Let's connect
+<h2 class="text-3xl mb-6 font-semibold">
+Contact
 </h2>
 
-<p class="mb-10 text-gray-600">
-Always open to learning, collaborating and exploring new opportunities.
+<p class="text-gray-600">
+Email: yourmail@gmail.com
 </p>
 
-<div class="flex justify-center gap-10 text-3xl accent">
+<p class="text-gray-600">
+GitHub: github.com/nhuquynh3110
+</p>
 
-<a href="https://www.facebook.com/nhuwquynh.vt/">
-<i class="fab fa-facebook"></i>
-</a>
+</section>
 
-<a href="mailto:nhuquynhh3110@gmail.com">
-<i class="fa-solid fa-envelope"></i>
-</a>
 
-</div>
+<footer class="text-center py-10 text-gray-400">
+
+<p>
+© 2026 Vu Thi Nhu Quynh
+</p>
 
 </footer>
 
